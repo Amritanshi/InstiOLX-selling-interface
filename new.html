@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Your Item - InstiOLX</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sell Your Item</h1>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="price">Price</label>
+                <input type="number" id="price" name="price" required>
+            </div>
+            <div class="form-group">
+                <label for="buying-date">Buying Date</label>
+                <input type="date" id="buying-date" name="buying-date" required>
+            </div>
+            <div class="form-group">
+                <label for="buying-price">Buying Price</label>
+                <input type="number" id="buying-price" name="buying-price" required>
+            </div>
+            <div class="form-group">
+                <label for="photos">Upload Multiple Photos</label>
+                <input type="file" id="photos" name="photos[]" multiple accept="image/*">
+            </div>
+            <div class="form-group">
+                <label for="your-details">Your Details</label>
+                <input type="text" id="your-details" name="your-details" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+            <button type="submit" class="post-button">Post Ad</button>
+        </form>
+    </div>
+</body>
+</html>
